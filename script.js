@@ -15,6 +15,8 @@ do {
     ejeY = parseInt(prompt(`Ingrese la posición en Y de la primera reina (debe ser un número entero entre 1 y ${n}):`));
 } while (isNaN(ejeY) || ejeY < 1 || ejeY > n);
 
+const divSoluciones = document.querySelector('#soluciones');
+
 let soluciones = []; // Arreglo para guardar todas las soluciones como matriz
 let solucionesXY = 0; // Numero de soluciones con una reina en tablero[x][y]
 let totalSoluciones = 0; //Numero de soluciones
