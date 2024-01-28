@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="soluciones" id="soluciones">
+
+        <h1>Solución para <span id="variableSpan"></span>:</h1>
+        <button id="resetButton">Reset</button> <br><br>
+
+
+    </div>
+
+
+
+    <script src="./script.js"></script>
+
+    <script>
+        let coordenadas = `(${ejeX},${ejeY})`;
+        const spanElement = document.getElementById('variableSpan');
+        spanElement.textContent = coordenadas;
+
+        //reset
+        document.getElementById('resetButton').addEventListener('click', function () {
+            location.reload(); //Recargar la pagina
+        });
+
+    </script>
+</body>
+
+</html>
